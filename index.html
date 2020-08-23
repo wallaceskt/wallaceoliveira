@@ -18,103 +18,144 @@
 		<meta name="abstract" content="Uma descrição muito curta do website">
 		<meta name="language" content="pt-BR">
 		<meta name="rating" content="(general/mature/restricted/14 years/safe for kids)">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="styles/main.css">
 
 	</head>
 
-	<body>
+	<body id="landing-page">
 
-		<header>
-			
-            <img src="images/layout/logo_wall.png" alt="Wallace Oliveira">
+        <div id="container">
 
-            <nav>
-    
-                <ul>
-                    <li><a href="">Início</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Portfólio</a></li>
-                    <li><a href="">Contatos</a></li>
-                </ul>
-    
-            </nav>
+            <header>
 
-		</header>
+                <div class="logo">
 
-		<main>
-
-            <section id="destaque">
-
-                <h2>Em destaque</h2>
-
-                <div>
-
-                    <h1>Título</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <img src="images/layout/logo_wall.svg" alt="Wallace Oliveira">
 
                 </div>
+                
+                <div class="menu-icon">
 
-            </section>
+                    <!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
 
-			<section>
+                </div>
+    
+                <nav class="navigation-menu">
 
-				<article>
+                    <div class="profile">
 
-					<h2>Título do artigo 1</h2>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ea magnam ut distinctio accusantium molestiae! Fugiat consequuntur, asperiores eveniet cupiditate minima labore corrupti, recusandae eius est repellat aperiam quod. Commodi.</p>
+                        <span class="profile-img">
 
-				</article>
+                            <img src="images/logo-profile.JPG" alt="Wallace Oliveira">
 
-				<article>
+                        </span>
 
-					<h2>Título do artigo 2</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste delectus nihil quae enim atque, similique, reprehenderit velit autem accusantium nostrum odit nam aliquam ipsa officiis, sapiente fugit maiores est ratione?</p>
+                        <span>
 
-				</article>
+                            <p class="name">Wallace Oliveira</p>
+                            <p class="status">Online</p>
 
-				<article>
+                        </span>
 
-					<h2>Título do artigo 3</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veritatis repudiandae asperiores sint distinctio voluptatibus quo impedit sequi voluptatem? Fugit asperiores facilis laudantium dolore, veniam totam est ullam ipsa hic.</p>
-
-				</article>
-
-			</section>
-
-		</main>
-
-		<footer>
-
-            <div id="logo_footer">
-
-                <img src="images/layout/logo_wall_rodape.png" alt="Wallace Oliveira">
-            
-            </div>
-
-            <div id="content_footer">
-
-                <nav>
+                    </div>
         
-                    <ul>
-                        <li><a href="">Início</a></li>
-                        <li><a href="">Sobre</a></li>
-                        <li><a href="">Portfólio</a></li>
-                        <li><a href="">Contatos</a></li>
+                    <ul class="list-nav">
+                        <li class="item-nav"><a href="">Início</a></li>
+                        <li class="item-nav"><a href="">Sobre</a></li>
+                        <li class="item-nav"><a href="">Portfólio</a></li>
+                        <li class="item-nav"><a href="">Contatos</a></li>
                     </ul>
         
                 </nav>
+    
+            </header>
+    
+            <main>
+    
+                <section id="destaque">
+    
+                    <h2><span></span>Em destaque</h2>
+    
+                    <div id="banner">
 
-                <p>copyright &copy; - Wallace Oliveira - Todos os direitos reservados.</p>
+                        <div class="content-banner">
 
-            </div>
+                            <h1>Título</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-            <div id="link_top">
-
-                <a href="#topo">topo<img src="images/layout/bt_top.png" alt="Ir ao topo da página"></a>
-
-            </div>
-
-		</footer>
+                        </div>
+    
+    
+                    </div>
+    
+                </section>
+    
+                <section id="destaque-content">
+    
+                    <article>
+    
+                        <h2><span></span>Título do artigo 1</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ea magnam ut distinctio accusantium molestiae! Fugiat consequuntur, asperiores eveniet cupiditate minima labore corrupti, recusandae eius est repellat aperiam quod. Commodi.</p>
+    
+                    </article>
+    
+                    <article>
+    
+                        <h2><span></span>Título do artigo 2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste delectus nihil quae enim atque, similique, reprehenderit velit autem accusantium nostrum odit nam aliquam ipsa officiis, sapiente fugit maiores est ratione?</p>
+    
+                    </article>
+    
+                    <article>
+    
+                        <h2><span></span>Título do artigo 3</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veritatis repudiandae asperiores sint distinctio voluptatibus quo impedit sequi voluptatem? Fugit asperiores facilis laudantium dolore, veniam totam est ullam ipsa hic.</p>
+    
+                    </article>
+    
+                </section>
+    
+            </main>
+    
+            <footer>
+    
+                <div id="logo-footer">
+    
+                    <img src="images/layout/logo_wall_rodape.png" alt="Wallace Oliveira">
+                
+                </div>
+    
+                <div id="content-footer">
+    
+                    <nav>
+            
+                        <ul>
+                            <li><a href="">Início</a></li>
+                            <li><a href="">Sobre</a></li>
+                            <li><a href="">Portfólio</a></li>
+                            <li><a href="">Contatos</a></li>
+                        </ul>
+            
+                    </nav>
+    
+                    <p>copyright &copy; - Wallace Oliveira - Todos os direitos reservados.</p>
+    
+                </div>
+    
+                <div id="link-top">
+    
+                    <a href="#container" class="link-ancor-top">topo</a>
+    
+                </div>
+    
+            </footer>
+            
+        </div>
 
 	</body>
 

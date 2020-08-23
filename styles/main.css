@@ -1,0 +1,340 @@
+:root {
+    --color-background: #4D5151;
+    --color-title: #4D5151;
+    --color-primary: #FFFFFF;
+    --color-border: #4D5151;
+    --color-shadow-dark: #4D5151;
+    --color-shadow-light: #FFFFFF;
+    --color-border-dark: rgba(77, 81, 81, 0.5);
+    --color-border-light: rgba(255, 255, 255, 0.5);
+    --color-background-transparent: rgba(77, 81, 81, 0.2);
+
+    /* Tamanho da fonte padrão: 16px - 100% - 1rem (rem: relativo ao :root) */
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: var(--color-primary);
+}
+
+body {
+    background: url(../images/layout/bg_site.gif);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-title);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    margin-bottom: 1rem;
+    text-shadow: 0 1px 0 var(--color-border-light);
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+    width: 6px;
+    height: auto;
+    background-color: var(--color-background);
+    border-bottom: 1px solid var(--color-border-light);
+    margin: 4px 10px 4px 0;
+}
+
+#container {
+    width: 90vw;
+    max-width: 1100px;
+}
+
+#container p {
+    text-shadow: 0 1px 0 var(--color-border-dark);
+}
+
+#container header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1099px) {
+    #container header {
+        width: 90vw;
+        height: 3rem;
+        box-shadow: 0 10px 10px -10px var(--color-border-dark);
+    }
+
+    #container .logo {
+        max-width: 50%;
+        display: flex;
+    }
+
+    #container header img {
+        width: 100%;
+    }
+
+    #container header .menu-icon::after {
+        content: '\f0c9';
+        font: normal normal normal 1.5rem FontAwesome;
+        color: var(--color-title);
+        text-shadow: 0 1px 0 var(--color-border-light);
+    }
+
+    #container header nav.navigation-menu {
+        width: 70%;
+        margin-top: 176px;
+        background: var(--color-background);
+        margin-left: -16px;
+        padding: 0 10px;
+        position: absolute;
+    }
+
+    #container header nav .profile {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    #container header nav .profile img {
+        display: block;
+        width: 65px;
+        height: 65px;
+        margin-right: 1rem;
+        border-radius: 50%;
+    }
+
+    #container header nav .profile p {
+        font-size: 0.80rem;
+    }
+
+    /* #container header nav ul {
+    } */
+    
+    #container header nav ul li {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        /* width: 10rem;
+        border-top: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-border);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.5); */
+        transition: opacity 0.2s;
+        border-top: 1px solid var(--color-border-light);
+    }
+    
+    /* #container header nav ul li:hover {
+        color: var(--color-primary);
+        text-shadow: 0 1px 0 rgba(77, 81, 81, 0.5);
+        background: linear-gradient(180deg, rgba(255,255,255,0.3), rgba(77,81,81,0.5));
+    } */
+    
+    #container header nav ul li a {
+        font-weight: 700;
+        color: var(--color-primary);
+        text-shadow: 0 1px 0 var(--color-border-dark);
+        transition: opacity 0.2s;
+    }
+    
+    #container header nav ul li a:hover {
+        color: var(--color-primary);
+        text-shadow: 0 1px 0 var(--color-border-dark);
+    }
+}
+
+@media (min-width: 1100px) {
+    #container {
+        width: 90vw;
+        display: table;
+        max-width: 1100px;
+        padding: 0 40px;
+        box-shadow: 0px 0px 5px 2px var(--color-shadow-dark)
+    }
+
+    #container header {
+        height: 8rem;
+    }
+
+    #container header .menu-icon {
+        display: none;
+    }
+
+    #container header nav .profile {
+        display: none;
+    }
+
+    #container header img {
+        width: 210px;
+        height: 55px;
+    }
+
+    #container header nav ul {
+        display: flex;
+        width: 50vw;
+    }
+    
+    #container header nav ul li {
+        width: 25%; /* 10rem */
+        text-align: center;
+        border-top: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-border);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        box-shadow: 0px 1px 0px 0px var(--color-border-light);
+        transition: opacity 0.2s;
+        font-weight: 700;
+        color: var(--color-title);
+        text-shadow: 0 1px 0 var(--color-border-light);
+    }
+    
+    #container header nav ul li:hover {
+        color: var(--color-primary);
+        text-shadow: 0 1px 0 var(--color-border-dark);
+        background: linear-gradient(180deg, var(--color-border-light), var(--color-border-dark));
+        color: var(--color-primary);
+        text-shadow: 0 1px 0 var(--color-border-dark);
+    }
+    
+    #container header nav ul li a {
+        font-weight: 700;
+        color: var(--color-title);
+        text-shadow: 0 1px 0 var(--color-border-light);
+        transition: opacity 0.2s;
+    }
+    
+    #container header nav ul li a:hover {
+        color: var(--color-primary);
+        text-shadow: 0 1px 0 var(--color-border-dark);
+    }
+
+    #container main #destaque #banner {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-border);
+        background: var(--color-background-transparent);
+        box-shadow: 0 1px 0 0 var(--color-border-light);
+    }
+
+    #container main #destaque #banner h1 {
+        color: var(--color-title);
+    }
+
+    #container main #destaque-content {
+        display: flex;
+        margin: 40px 0;
+        justify-content: space-between;
+    }
+
+    #container footer {
+        margin-bottom: 20px;
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.8rem;
+        border-top: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-border);
+        background: var(--color-background-transparent);
+        box-shadow: 0 1px 0 0 var(--color-border-light);
+    }
+
+    #container footer #logo-footer {
+        width: 25%;
+        display: flex;
+    }
+
+    #container footer #content-footer {
+        width: 50%;
+    }
+
+    #container footer #content-footer nav {
+        margin-bottom: 5px;
+    }
+
+    #container footer #content-footer nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #container footer #content-footer nav ul li {
+        padding: 0px 20px;
+    }
+
+    #container footer #content-footer nav ul li a {
+        color: var(--color-primary);
+        text-shadow: 0 1px 0 var(--color-border-dark);
+        font-weight: 600;
+    }
+
+    #container footer #content-footer nav ul li a:hover {
+        color: var(--color-title);
+        text-shadow: 0 1px 0 var(--color-border-light);
+    }
+
+    #container footer #content-footer p {
+        text-align: center;
+    }
+
+    #container footer #link-top {
+        width: 25%;
+        text-align: right;
+    }
+
+    #container footer #link-top a {
+        color: var(--color-primary);
+        text-shadow: 0 1px 0 var(--color-border-dark);
+        font-weight: 600;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #container footer #link-top a:hover {
+        color: var(--color-title);
+        text-shadow: 0 1px 0 var(--color-border-light);
+    }
+
+    #container footer #link-top a.link-ancor-top::after {
+        content: '\f139';
+        font: normal normal normal 1.5rem FontAwesome;
+        color: var(--color-primary);
+        text-shadow: 0 1px 0 var(--color-border-dark);
+        padding-left: 0.5rem;
+    }
+
+    #container footer #link-top a.link-ancor-top:hover::after {
+        color: var(--color-title);
+        text-shadow: 0 1px 0 var(--color-border-light);
+    }
+}
