@@ -50,7 +50,7 @@
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
      inkscape:cy="277.14286"
-     inkscape:cx="238.57143"
+     inkscape:cx="38.571429"
      inkscape:zoom="0.35"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -75,12 +75,16 @@
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
     <circle
+       inkscape:export-ydpi="72.029854"
+       inkscape:export-xdpi="72.029854"
        r="67"
        cy="67"
        cx="67"
        id="path94"
        style="fill:url(#linearGradient110);stroke-width:0.272674;fill-opacity:1" />
     <g
+       inkscape:export-ydpi="72.029854"
+       inkscape:export-xdpi="72.029854"
        transform="matrix(0.26458333,0,0,0.26458333,146.54137,40.999567)"
        inkscape:label="wallace"
        style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:140px;line-height:1.25;font-family:'Heiti SC';-inkscape-font-specification:'Heiti SC Light';display:inline;fill:#4d5151;fill-opacity:1;stroke:none"
