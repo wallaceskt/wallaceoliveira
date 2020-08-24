@@ -1,16 +1,17 @@
-form#contact-form fieldset {
+form fieldset {
     border: none;
 }
 
-form#contact-form fieldset .input-block label,
-form#contact-form fieldset .textarea-block label {
+form fieldset .input-block label,
+form fieldset .textarea-block label {
     display: block;
     text-shadow: 0 1px 0 var(--color-border-dark);
     font-weight: 400;
 }
 
-form#contact-form fieldset .input-block input,
-form#contact-form fieldset .textarea-block textarea {
+form fieldset .input-block input,
+form fieldset .textarea-block textarea,
+form fieldset .button-block button {
     /* width: 100%; */
     height: 2.5rem;
     margin-top: 0.8rem;
@@ -25,12 +26,44 @@ form#contact-form fieldset .textarea-block textarea {
     font-size: 1rem;
 }
 
-form#contact-form fieldset .textarea-block textarea {
+form fieldset .textarea-block textarea {
     padding: 1.2rem 1.6rem;
-    height: 10rem;
     resize: vertical;
     font-size: 1rem;
     font-family: inherit;
     font-weight: 500;
     box-shadow: 1px solid var(--color-shadow-dark);
+}
+
+form#contact-form fieldset .textarea-block textarea {
+    width: 44.8rem;
+    height: 10rem;
+}
+
+form fieldset .button-block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+form fieldset .button-block button {
+    cursor: pointer;
+    text-shadow: 0 1px 0 var(--color-border-dark);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+form fieldset .button-block button[type=reset] {
+    margin-right: 1rem;
+    background-color: var(--color-background-button-reset);
+}
+
+form fieldset .button-block button[type=reset]:hover {
+    background-color: var(--color-background-button-reset-hover);
+}
+
+form fieldset .button-block button[type=submit] {
+    background-color: var(--color-background-button-submit);
+}
+
+form fieldset .button-block button[type=submit]:hover {
+    background-color: var(--color-background-button-submit-hover);
 }

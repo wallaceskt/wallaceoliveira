@@ -3,5 +3,16 @@
 }
 
 @media (min-width: 1100px) {
-    /*  */
+    #contact-page #container main {
+        display: flex;
+    }
+
+    #contact-page #container main section {
+        margin-right: 2.5rem;
+        width: 56vw;
+    }
+
+    #contact-page #container main aside {
+        width: 20vw;
+    }
 }

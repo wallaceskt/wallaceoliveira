@@ -8,6 +8,10 @@
     --color-border-dark: rgba(77, 81, 81, 0.5);
     --color-border-light: rgba(255, 255, 255, 0.5);
     --color-background-transparent: rgba(77, 81, 81, 0.2);
+    --color-background-button-submit: #007bff;
+    --color-background-button-submit-hover: #0069d9;
+    --color-background-button-reset: rgba(77, 81, 81, 0.2);
+    --color-background-button-reset-hover: rgba(77, 81, 81, 0.5);
 
     /* Tamanho da fonte padrão: 16px - 100% - 1rem (rem: relativo ao :root) */
     font-size: 100%;
@@ -71,6 +75,11 @@ h6 span.h-icon {
 #container {
     width: 90vw;
     max-width: 1100px;
+}
+
+#container a,
+#container a::after {
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 #container p {
