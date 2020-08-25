@@ -78,7 +78,8 @@ h6 span.h-icon {
 }
 
 #container a,
-#container a::after {
+#container a::after,
+#container a::before {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
@@ -88,7 +89,7 @@ h6 span.h-icon {
 
 #container section p,
 #container article p {
-    margin-bottom: 20px;
+    margin-bottom: 1.3rem;
 }
 
 #container header {

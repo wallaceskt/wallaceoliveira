@@ -135,8 +135,6 @@
         color: var(--color-primary);
         text-shadow: 0 1px 0 var(--color-border-dark);
         background: linear-gradient(180deg, var(--color-border-light), var(--color-border-dark));
-        color: var(--color-primary);
-        text-shadow: 0 1px 0 var(--color-border-dark);
     }
     
     #container header nav ul li a {
