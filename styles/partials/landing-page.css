@@ -53,8 +53,11 @@
     }
 
     #container main #destaque-content article .article-wrap {
-        background: var(--color-background-transparent);
         padding: 10px 10px;
+        border-top: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-border);
+        background: var(--color-background-transparent);
+        box-shadow: 0 1px 0 0 var(--color-border-light);
     }
 
     #container main #destaque-content article .article-wrap img {
