@@ -59,6 +59,10 @@ h6 {
     text-shadow: 0 1px 0 var(--color-border-light);
 }
 
+h1 {
+    margin-bottom: 2rem;
+}
+
 h1 span.h-icon,
 h2 span.h-icon,
 h3 span.h-icon,

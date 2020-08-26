@@ -115,16 +115,17 @@
     #container header nav ul {
         display: flex;
         width: 50vw;
+        border-top: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-border);
+        background-color: var(--color-background-transparent);
+        box-shadow: 0px 1px 0px 0px var(--color-border-light);
     }
     
     #container header nav ul li {
         width: 25%;
         text-align: center;
-        border-top: 1px solid var(--color-border);
-        border-bottom: 1px solid var(--color-border);
         padding-top: 1rem;
         padding-bottom: 1rem;
-        box-shadow: 0px 1px 0px 0px var(--color-border-light);
         transition: opacity 0.2s;
         font-weight: 700;
         color: var(--color-title);
@@ -141,12 +142,5 @@
         font-weight: 700;
         color: inherit;
         padding: 10% 26%;
-        /* color: var(--color-title);
-        text-shadow: 0 1px 0 var(--color-border-light); */
     }
-    
-    /* #container header nav ul li a:hover {
-        color: var(--color-primary);
-        text-shadow: 0 1px 0 var(--color-border-dark);
-    } */
 }
