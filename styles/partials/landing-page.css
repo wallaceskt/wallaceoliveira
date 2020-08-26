@@ -48,27 +48,27 @@
         justify-content: space-between;
     }
 
-    #container main section article {
+    #container main .destaque-content article {
         width: 32%;
     }
 
-    #container main section article .article-wrap {
+    #container main .destaque-content article .article-wrap {
         background: var(--color-background-transparent);
         padding: 10px 10px;
     }
 
-    #container main section article .article-wrap img {
+    #container main .destaque-content article .article-wrap img {
         width: 300px;
         float: right;
         border-radius: 50%;
         margin-left: 20px;
     }
 
-    #container main section article .article-wrap .read-more {
+    #container main .destaque-content article .article-wrap .read-more {
         text-align: right;
     }
 
-    #container main section article .article-wrap .read-more a {
+    #container main .destaque-content article .article-wrap .read-more a {
         font-size: 0.8rem;
         display: inline-flex;
         align-items: center;
@@ -77,12 +77,12 @@
         font-weight: 600;
     }
 
-    #container main section article .article-wrap .read-more a:hover {
+    #container main .destaque-content article .article-wrap .read-more a:hover {
         color: var(--color-title);
         text-shadow: 0 1px 0 var(--color-border-light);
     }
 
-    #container main section article .article-wrap .read-more a.link-read-more::after {
+    #container main .destaque-content article .article-wrap .read-more a.link-read-more::after {
         content: '\f055';
         font: normal normal normal 1.5rem FontAwesome;
         color: var(--color-primary);
@@ -90,7 +90,7 @@
         padding-left: 0.5rem;
     }
 
-    #container main section article .article-wrap .read-more a.link-read-more:hover::after {
+    #container main .destaque-content article .article-wrap .read-more a.link-read-more:hover::after {
         color: var(--color-title);
         text-shadow: 0 1px 0 var(--color-border-light);
     }
