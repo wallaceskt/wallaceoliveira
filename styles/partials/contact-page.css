@@ -12,7 +12,28 @@
         width: 56vw;
     }
 
+    #contact-page #container main section .contact-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px 10px;
+        background-color: var(--color-background-transparent);
+        border-top: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-border);
+        box-shadow: 0 1px 0 0 var(--color-border-light);
+    }
+
     #contact-page #container main aside {
         width: 20vw;
+    }
+
+    #contact-page #container main aside .aside-wrap {
+        width: 20vw;
+        padding: 10px 10px;
+        background-color: var(--color-background-transparent);
+        border-top: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-border);
+        box-shadow: 0 1px 0 0 var(--color-border-light);
     }
 }

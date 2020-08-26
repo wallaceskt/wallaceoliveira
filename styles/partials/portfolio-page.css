@@ -12,25 +12,23 @@
         width: 56vw;
     }
 
-    #portfolio-page #container main aside {
-        width: 20vw;
-    }
-
     #portfolio-page #container main section .portfolio-wrap {
         width: 100%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding: 10px 10px;
+        background-color: var(--color-background-transparent);
+        border-top: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-border);
+        box-shadow: 0 1px 0 0 var(--color-border-light);
     }
 
     #portfolio-page #container main section .portfolio-wrap .project {
         width: 32%;
         padding: 0.6rem 0.6rem;
         margin-bottom: 1rem;
-        border-top: 1px solid var(--color-border);
-        border-bottom: 1px solid var(--color-border);
-        background: var(--color-background-transparent);
-        box-shadow: 0 1px 0 0 var(--color-border-light);
+        /* background: var(--color-background-transparent); */
     }
 
     .portfolio-wrap .project .thumb {
@@ -74,14 +72,58 @@
     }
 
     .portfolio-wrap .project-detail .images {
-        width: 470px;
+        width: 450px;
         margin-right: 20px;
     }
 
     .portfolio-wrap .project-detail .images img {
-        width: 470px;
+        width: 450px;
         display: block;
-        border: 10px solid var(--color-border-dark);
+        border: 10px solid var(--color-border);
         margin-bottom: 20px;
+    }
+
+    .portfolio-wrap .return {
+        text-align: right;
+    }
+
+    .portfolio-wrap .return a {
+        font-size: 0.8rem;
+        display: inline-flex;
+        align-items: center;
+        color: var(--color-primary);
+        text-shadow: 0 1px 0 var(--color-border-dark);
+        font-weight: 600;
+    }
+
+    .portfolio-wrap .return a:hover {
+        color: var(--color-title);
+        text-shadow: 0 1px 0 var(--color-border-light);
+    }
+
+    .portfolio-wrap .return a.link-return::after {
+        content: '\f137';
+        font: normal normal normal 1.5rem FontAwesome;
+        color: var(--color-primary);
+        text-shadow: 0 1px 0 var(--color-border-dark);
+        padding-left: 0.5rem;
+    }
+
+    .portfolio-wrap .return a.link-return:hover::after {
+        color: var(--color-title);
+        text-shadow: 0 1px 0 var(--color-border-light);
+    }
+
+    #portfolio-page #container main aside {
+        width: 20vw;
+    }
+
+    #portfolio-page #container main aside .aside-wrap {
+        width: 20vw;
+        padding: 10px 10px;
+        background-color: var(--color-background-transparent);
+        border-top: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-border);
+        box-shadow: 0 1px 0 0 var(--color-border-light);
     }
 }
