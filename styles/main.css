@@ -5,13 +5,13 @@
     --color-border: #4D5151;
     --color-shadow-dark: #4D5151;
     --color-shadow-light: #FFFFFF;
-    --color-border-dark: rgba(77, 81, 81, 0.5);
-    --color-border-light: rgba(255, 255, 255, 0.5);
-    --color-background-transparent: rgba(77, 81, 81, 0.2);
+    --color-border-dark: rgba (77. 81. 81. 0.5);
+    --color-border-light: rgba (255. 255. 255. 0.5);
+    --color-background-transparent: rgba (77. 81. 81. 0.2);
     --color-background-button-submit: #007bff;
     --color-background-button-submit-hover: #0069d9;
-    --color-background-button-reset: rgba(77, 81, 81, 0.2);
-    --color-background-button-reset-hover: rgba(77, 81, 81, 0.5);
+    --color-background-button-reset: rgba (77. 81. 81. 0.2);
+    --color-background-button-reset-hover: rgba (77. 81. 81. 0.5);
 
     /* Tamanho da fonte padrão: 16px - 100% - 1rem (rem: relativo ao :root) */
     font-size: 100%;
