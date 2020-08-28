@@ -1,10 +1,10 @@
 :root {
     --color-background: #4D5151;
     --color-title: #4D5151;
-    --color-primary: #FFFFFF;
+    --color-primary: #FFF;
     --color-border: #4D5151;
     --color-shadow-dark: #4D5151;
-    --color-shadow-light: #FFFFFF;
+    --color-shadow-light: #FFF;
     --color-border-dark: rgba(77, 81, 81, 0.5);
     --color-border-light: rgba(255, 255, 255, 0.5);
     --color-background-transparent: rgba(77, 81, 81, 0.2);
