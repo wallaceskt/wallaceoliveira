@@ -1,3 +1,15 @@
+#portfolio-page #container main section .portfolio-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    background-color: var(--color-background-transparent);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: 0 1px 0 0 var(--color-border-light);
+}
+
 #portfolio-page #container main section .portfolio-wrap .project {
     width: 210px;
     margin-bottom: 1rem;
@@ -58,9 +70,48 @@
     margin-block-end: 0rem !important;
 }
 
+.portfolio-wrap .return a {
+    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-primary);
+    text-shadow: 0 1px 0 var(--color-border-dark);
+    font-weight: 600;
+}
+
+.portfolio-wrap .return a:hover {
+    color: var(--color-title);
+    text-shadow: 0 1px 0 var(--color-border-light);
+}
+
+.portfolio-wrap .return a.link-return::after {
+    content: '\f137';
+    font: normal normal normal 1.5rem FontAwesome;
+    color: var(--color-primary);
+    text-shadow: 0 1px 0 var(--color-border-dark);
+    padding-left: 0.5rem;
+}
+
+.portfolio-wrap .return a.link-return:hover::after {
+    color: var(--color-title);
+    text-shadow: 0 1px 0 var(--color-border-light);
+}
+
 @media (max-width: 1099px) {
     #container main section h1 {
         margin-top: 1.5rem;
+    }
+
+    #portfolio-page #container main section .portfolio-wrap {
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-wrap .return a.link-return::after {
+        font-size: 1.2rem;
+    }
+
+    #container aside h3 {
+        margin-bottom: 1rem;
     }
 }
 
@@ -72,18 +123,6 @@
     #portfolio-page #container main section {
         margin-right: 2.5rem;
         width: 56vw;
-    }
-
-    #portfolio-page #container main section .portfolio-wrap {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 20px 20px;
-        background-color: var(--color-background-transparent);
-        border-top: 1px solid var(--color-border);
-        border-bottom: 1px solid var(--color-border);
-        box-shadow: 0 1px 0 0 var(--color-border-light);
     }
 
     .portfolio-wrap .project-detail {
@@ -105,33 +144,6 @@
 
     .portfolio-wrap .return {
         text-align: right;
-    }
-
-    .portfolio-wrap .return a {
-        font-size: 0.8rem;
-        display: inline-flex;
-        align-items: center;
-        color: var(--color-primary);
-        text-shadow: 0 1px 0 var(--color-border-dark);
-        font-weight: 600;
-    }
-
-    .portfolio-wrap .return a:hover {
-        color: var(--color-title);
-        text-shadow: 0 1px 0 var(--color-border-light);
-    }
-
-    .portfolio-wrap .return a.link-return::after {
-        content: '\f137';
-        font: normal normal normal 1.5rem FontAwesome;
-        color: var(--color-primary);
-        text-shadow: 0 1px 0 var(--color-border-dark);
-        padding-left: 0.5rem;
-    }
-
-    .portfolio-wrap .return a.link-return:hover::after {
-        color: var(--color-title);
-        text-shadow: 0 1px 0 var(--color-border-light);
     }
 
     #portfolio-page #container main aside {

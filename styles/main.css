@@ -114,10 +114,6 @@ h6 span.h-icon {
     body {
         font-size: 80%;
     }
-
-    #container footer #logo-footer img {
-        width: 152px;
-    }
 }
 
 @media (min-width: 1100px) {
