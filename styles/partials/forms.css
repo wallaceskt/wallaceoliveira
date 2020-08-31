@@ -68,8 +68,13 @@ form fieldset .button-block button[type=submit]:hover {
 }
 
 @media (max-width: 1099px) {
+    form#contact-form fieldset .textarea-block {
+        width: 77vw;
+    }
+
     form#contact-form fieldset .textarea-block textarea {
-        width: 15.4rem;
+        /* width: 15.4rem; */
+        width: 100%;
     }
 
     form fieldset .button-block button {
