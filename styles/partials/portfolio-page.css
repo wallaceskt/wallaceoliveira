@@ -132,7 +132,8 @@
 
     .portfolio-wrap .project-detail .slide {
         display: block;
-        min-height: 130px;
+        height: 200px;
+        margin-bottom: 1rem;
     }
 
     .portfolio-wrap .project-detail .images {
@@ -141,12 +142,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 130px;
+        height: 200px;
     }
 
     .portfolio-wrap .project-detail .images img {
-        position: relative;
-        display: flex;
+        position: absolute;
+        display: none;
         width: 79%;
         
     }
