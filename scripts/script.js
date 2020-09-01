@@ -1,13 +1,13 @@
 $( document ).ready(function() {
     $(".images img:eq(0)").addClass("ativo").show();
-    setInterval(slide, 3000);
+    setInterval(slide, 5000);
 
     function slide() {
         if($(".ativo").next().length) {
-            $(".ativo").fadeOut().removeClass("ativo").next().fadeIn().addClass("ativo");
+            $(".ativo").fadeOut("slow").removeClass("ativo").next().fadeIn("slow").addClass("ativo");
         } else {
-            $(".ativo").fadeOut().removeClass("ativo");
-            $(".images img:eq(0)").fadeIn().addClass("ativo");
+            $(".ativo").fadeOut("slow").removeClass("ativo");
+            $(".images img:eq(0)").fadeIn("slow").addClass("ativo");
         }
     }
 

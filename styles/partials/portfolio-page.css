@@ -131,25 +131,21 @@
     }
 
     .portfolio-wrap .project-detail .slide {
-        display: block;
-        height: 200px;
+        display: flex;
         margin-bottom: 1rem;
+        justify-content: center;
     }
 
     .portfolio-wrap .project-detail .images {
-        margin-bottom: 1rem;
+        width: 334px;
         overflow: hidden;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 200px;
     }
 
     .portfolio-wrap .project-detail .images img {
-        position: absolute;
+        width: 100%;
         display: none;
-        width: 79%;
-        
+        border: 5px solid var(--color-border);
     }
 
     .portfolio-wrap .project-detail .info {
