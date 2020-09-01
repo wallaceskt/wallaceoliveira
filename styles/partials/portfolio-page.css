@@ -10,6 +10,17 @@
     box-shadow: 0 1px 0 0 var(--color-border-light);
 }
 
+.portfolio-wrap a {
+    font-weight: 600;
+    color: var(--color-title);
+    text-shadow: 0 1px 0 var(--color-border-light);
+}
+
+.portfolio-wrap a:hover {
+    color: var(--color-primary);
+    text-shadow: 0 1px 0 var(--color-border-dark);
+}
+
 #portfolio-page #container main section .portfolio-wrap .project {
     width: 210px;
     margin-bottom: 1rem;
@@ -102,12 +113,33 @@
         margin-top: 1.5rem;
     }
 
-    #portfolio-page #container main section .portfolio-wrap {
+    .portfolio-wrap {
         margin-bottom: 2rem;
+    }
+
+    .portfolio-wrap .project {
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-wrap .project .heading h2 {
+        margin-bottom: 0.2rem;
+        font-size: 1.2rem;
     }
 
     .portfolio-wrap .return a.link-return::after {
         font-size: 1.2rem;
+    }
+
+    .portfolio-wrap .project-detail .images {
+        margin-bottom: 1rem;
+    }
+
+    .portfolio-wrap .project-detail .info {
+        margin-bottom: 1.5rem;
+    }
+
+    .portfolio-wrap .project-detail .info p {
+        margin-bottom: 0.5rem;
     }
 
     #container aside h3 {

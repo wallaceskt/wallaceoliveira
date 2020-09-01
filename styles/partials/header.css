@@ -1,14 +1,15 @@
+#container header .logo {
+    max-width: 50%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 1099px) {
     #container header {
         width: 90vw;
         height: 3.5rem;
         box-shadow: 0 10px 10px -10px var(--color-border-dark);
-    }
-
-    #container header .logo {
-        max-width: 50%;
-        height: 2.5rem;
-        display: flex;
     }
 
     #container header .logo img {
@@ -42,7 +43,6 @@
         width: 90%;
         margin-top: 172px;
         background: var(--color-background);
-        /* margin-left: -1.8rem; */
         padding: 0 20px;
         position: absolute;
         border-radius: 10px;
