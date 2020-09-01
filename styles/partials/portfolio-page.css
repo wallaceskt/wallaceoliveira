@@ -176,12 +176,12 @@
     }
 
     .portfolio-wrap .project-detail .images {
-        width: 450px;
+        width: 434px;
         margin-right: 20px;
     }
 
     .portfolio-wrap .project-detail .images img {
-        width: 400px;
+        width: 100%;
         display: block;
         border: 5px solid var(--color-border);
         border-radius: 0.3rem;
